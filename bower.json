@@ -1,0 +1,19 @@
+{
+  "name": "bookmyshow_extension",
+  "version": "1.0",
+  "authors": [
+    "abhijit kalta <abhijitkalta@gmail.com>"
+  ],
+  "description": "Chrome plugin to highlight searched text",
+  "main": "manifest.json",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

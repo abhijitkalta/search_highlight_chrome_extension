@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "bookmyshow_extension",
+  "description": "This extension does a search and highlights the text",
+  "version": "1.0",
+  "author" : "abhijit kalta",
+  "browser_action" : {
+    "default_title" : "Use this to open the search popup",
+    "default_popup" : "popup/popup.html"
+  },
+  "background" : {
+    "scripts" : ["background.js"],
+    "persistent" : false
+  },
+  "permissions" : ["tabs", "activeTab"],
+   "content_scripts" : [
+   {
+     "matches" : ["*://*/*"],
+       "js"    : ["bower_components/jquery/dist/jquery.js", "bower_components/jquery-ui/jquery-ui.js", "content.js"],
+       "css"    : ["content.css"]
+   }
+   ]
+}
